@@ -47,6 +47,9 @@ export default function FileUpload(props) {
       alert("Pinata Error occurred! Try again later.");
       setLoading(false);
     }
+
+    setFile(null);
+    setFileName("No file selected");
   };
 
 

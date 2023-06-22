@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import SvgComponent from './SvgComponent'
 import FileUpload from './FileUpload'
 import Modal from './Modal';
@@ -21,15 +21,21 @@ export default function Home(props) {
     //     })
     // }
 
+    useEffect(() => {
+        setFetchAccount(account);
+    }, [account])
+
+
     const handleFetch = async () => {
         console.log(fetchAccount)
         try {
-            let ids = await contract.display(fetchAccount ? fetchAccount : account);
+            let ids = await contract.display(fetchAccount);
             console.log("ids: ", ids);
             setFiles(ids);
 
         } catch (error) {
-            alert("Error: You don't have access!");
+            alert("Error: You don't have access! ");
+            console.log("error: ", error)
         }
     }
 

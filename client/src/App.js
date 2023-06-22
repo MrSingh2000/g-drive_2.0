@@ -17,6 +17,7 @@ function App() {
       if (p) {
         const a = await p.send("eth_requestAccounts", []);
         setAccount(a[0]);
+        console.log('here: ', account);
         const s = await p.getSigner();
 
         let contractAddress = process.env.REACT_APP_CONTRACT_ADDRESS;
