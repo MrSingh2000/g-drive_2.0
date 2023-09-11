@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/MrSingh2000/insta_clone">
-    <img src="readme/logo.png" alt="Logo" width="80" height="80">
+    <img src="./readme/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">G-Drive 3.0</h3>
@@ -48,7 +48,7 @@
 ## About The Project
 
 <a href="https://gdrive3.netlify.app/">
-<img src="readme/1.png" alt="drawing"/>
+<img src="./readme/1.png" alt="drawing"/>
 </a>
 
 A file storing and sharing Dapp (like Google Drive) based on Ethereum Blockchain Network.
@@ -122,6 +122,7 @@ Installing latest Package Manager
    REACT_APP_PINATA_SECRET = 'your_Pinata_IPFS_secret_here'
    REACT_APP_PINATA_JWT = 'your_Pinata_jwt_here'
    REACT_APP_CONTRACT_ADDRESS = 'your_deployed_contract_address_here'
+   REACT_APP_PINATA_GATEWAY = 'your_pinata_gateway_address'
    ```
 
 4. Start the application
