@@ -36,7 +36,7 @@ function App() {
     };
 
     p && loadProvider();
-  }, [])
+  }, []);
 
   useEffect(() => {
     if (window.ethereum) {

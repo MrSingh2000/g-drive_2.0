@@ -65,7 +65,7 @@ export default function Home(props) {
                     </div>
                     <div className='grid grid-cols-2 md:grid-cols-4 gap-4 p-2'>
                         {files.map((item, index) => {
-                            const link = `https://gateway.pinata.cloud/ipfs/${item.substring(6)}`
+                            const link = `https://${process.env.REACT_APP_PINATA_GATEWAY}/ipfs${item.substring(6)}`
                             return (
                                 <div key={index}>
                                     <a href={link} target='_blank' rel='noreferrer'>
